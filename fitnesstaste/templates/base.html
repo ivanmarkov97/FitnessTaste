@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FitnessTaste - Фитнес-кафе</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+   	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<!--<div class="container">
+		<img src="{% static 'fitnesstaste/logo.png' %}" alt="My image"/>
+		<img src="/static/images/logo.png" alt="My image"/>
+	</div> -->
+	<div id=cont-2>
+		<div class="navigation">
+			<div class="block">
+				<a href="/">
+					<img src="/static/images/logo.png" alt="My image"/>
+				</a>
+			</div>
+			<nav class="block">
+				<ul class="navigation_ul">
+					<li><a href="/clubs">КЛУБЫ</a></li>
+					<li><a href="#">АКЦИИ</a></li>
+					<li><a href="/services">УСЛУГИ</a></li>
+					<li><a href="/friendchaising">ФРАНЧАЙЗИНГ</a></li>
+					<li><a href="#">БЛОГ</a></li>
+				</ul>
+			</nav>
+			<div class="block">
+				<div class="block block_on">
+					<div>Перезвоните мне</div>
+					<div>Обратная связь</div>
+					<a href=#>8(910)-472-11-43</a>
+				</div>
+				<div class="block top_info block_on">
+					Ваш город - ?
+					<div>
+						<select class="select_city">
+							<option>Москва</option>
+							<option>Подольск</option>
+							<option>Санкт-Петербург</option>
+							<option>Архангельск</option>
+							<option>Кострома</option>
+							<option>Сергиев-Пасад</option>
+							<option>Рязань</option>
+							<option>Владивосток</option>
+							<option>Алушта</option>
+							<option>Екатеринбург</option>
+							<option>Казань</option>
+							<option>Электросталь</option>
+						</select>
+						<div>
+							<b>МОСКВА</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% block main_page %}
+		{% endblock %}
+
+		{% block clubs %}
+		{% endblock %}
+
+		{% block services %}
+		{% endblock %}
+
+		{% block friendchaising %}
+		{% endblock %}
+
+		{% block form %}
+		{% endblock %}
+
+		<div class="blog">
+			<div class="block">
+				<div class="block">
+					<img src="/static/images/fit_photo.jpg" alt="fit_photo" class="fit_photo">	
+				</div>
+				<div class="block">
+					<div class="descr d1">
+						<span class="d_header">Хочу клубную карту</span>
+						<div>
+							За пару кликов
+						</div>
+					</div>
+					<div class="descr d2">
+						<span class="d_header">Мой клуб</span>
+						<div>
+							Найти ближайший клуб
+						</div>
+					</div>
+					<div class="descr d3">
+						<span class="d_header">Хочу работать у вас</span>
+						<div>
+							Открытые вакансии
+						</div>
+					</div>
+				</div>
+				<div class="block news_block">
+					<a href="#" style="text-decoration: none;">
+						<div class="a_header">
+							FitnessTaste<br>на Google+
+						</div>
+						<div class="a_main">
+							Друзья! Теперь мы есть и в сети Google+. Подписывайтесь и следите за нашими обновлениями!
+						</div>
+					</a>
+					<hr>
+					<a href="#">Новости</a>
+				</div>
+				<div class="block news_block">
+					<a href="#" style="text-decoration: none;">
+						<div class="a_header">
+							Дарите<br>близким красоту
+						</div>
+						<div class="a_main">
+							Подарочный сертификат на все услуги салона красоты и SPA процедуры - лучший подарок для друзей и семьи!
+						</div>
+					</a>
+					<hr>
+					<a href="#">Новости</a>
+				</div>
+			</div>
+
+			<div class="to_do">
+				<div class="block">
+					<div class="block to_do_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Лучше один раз увидеть, чем сто раз услышать. Закажите себе поход в любой фитнес-клуб нашей сети со скидкой!
+						</div>
+					</div>
+					<div class="block to_do_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Лучше один раз увидеть, чем сто раз услышать. Закажите себе поход в любой фитнес-клуб нашей сети со скидкой!
+						</div>
+					</div>
+					<div class="block to_do_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Лучше один раз увидеть, чем сто раз услышать. Закажите себе поход в любой фитнес-клуб нашей сети со скидкой!
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+
+
+			<div class="to_do">
+				<div class="block">
+					<div class="block to_do_block top_line_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Практически в любом фитнес-клубе сети X-Fit вы найдете фитнес для мужчин, женщин и детей на любой вкус: тренажерный зал, залы для аэробики, бассейн, бани, теннисные залы, игровые виды спорта, групповые и индивидуальные занятия, салоны красоты и SPA, фитнес-кафе здорового питания и многое другое. Это позволяет вам получать весь спектр необходимых занятий в одном спортивном центре!
+						</div>
+					</div>
+					<div class="block to_do_block top_line_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Практически в любом фитнес-клубе сети X-Fit вы найдете фитнес для мужчин, женщин и детей на любой вкус: тренажерный зал, залы для аэробики, бассейн, бани, теннисные залы, игровые виды спорта, групповые и индивидуальные занятия, салоны красоты и SPA, фитнес-кафе здорового питания и многое другое. Это позволяет вам получать весь спектр необходимых занятий в одном спортивном центре!
+						</div>
+					</div>
+					<div class="block to_do_block top_line_block">
+						<h4>ЗАКАЖИТЕ ПОСЕЩЕНИЕ<br>КЛУБА СО СКИДКОЙ</h4>
+						<div>
+							Практически в любом фитнес-клубе сети X-Fit вы найдете фитнес для мужчин, женщин и детей на любой вкус: тренажерный зал, залы для аэробики, бассейн, бани, теннисные залы, игровые виды спорта, групповые и индивидуальные занятия, салоны красоты и SPA, фитнес-кафе здорового питания и многое другое. Это позволяет вам получать весь спектр необходимых занятий в одном спортивном центре!
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ender_text">
+				<span>   
+					Разумеется, выбирая фитнес с X-Fit, вы также можете рассчитывать на современное тренажерное оборудование, просторные залы и раздевалки с качественным ремонтом — но эти вещи сами собой подразумеваются, когда речь идет о сети фитнес-клубов, входящей в тройку лучших в России. Присоединяйтесь к нам и вы!
+				</span>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer_block">
+				<span class="footer_item">© 2010-2015 СЕТЬ ФИТНЕС-КЛУБОВ X-FIT</span>
+				<span class="footer_item">КАРТА САЙТА</span>
+				<span class="footer_item">РЕКЛАМНЫЕ ВОЗМОЖНОСТИ</span>
+				<span class="footer_item">LOGO X-FIT</span>
+				<span class="footer_item">ЗАНИМАЛИСЬ СПОРТОМ — CREATIVEPEOPLE</span>
+			</div>
+		</footer>
+	</div>
+<script type="text/javascript" src='/static/js/script.js'></script>
+</body>
+</html>

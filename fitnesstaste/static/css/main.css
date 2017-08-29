@@ -1,0 +1,381 @@
+body{
+	width: 100%;
+	background-image: url(../images/background_img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.navigation{
+	text-align: center;
+	background: rgba(100, 100, 100, 0.6);
+}
+
+.block{
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+}
+
+.block_on{
+	height: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.block_on:hover{
+	background: grey;
+}
+
+.top_info{
+	vertical-align: top;
+}
+
+.white{
+	background: grey;
+	margin: 0;
+}
+
+.navigation_ul li{
+	display: inline;
+	margin: 14px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.select_city{
+	color: black;
+}
+
+.events{
+	margin-top: 25vh;
+	text-align: center;
+	color: white;
+}
+
+.new_line_word{
+	text-align: right;
+}
+
+.event{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.event > a{
+	text-decoration: none;
+}
+
+.event_icon{
+	margin-left: 10px;
+	background: white;
+	border-radius: 5px;
+}
+
+.info{
+	margin-top: 10vh;
+	text-align: center;
+}
+
+.service_list{
+	list-style: none;
+	text-align: left;
+	background-color: rgba(128, 196, 86, 0.6);
+	width: 20vw;
+}
+
+.service_list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.service_list li a:hover{
+	color: blue;
+}
+
+.present_image{
+	height: 225px;
+	width: 20vw;
+}
+
+.actions{
+	width: 20vw;
+}
+
+.actions a{
+	text-decoration: none;
+	color: white;
+}
+
+.visiter{
+	background-color: grey;
+	vertical-align: top;
+}
+
+.visiter a:hover{
+	color: blue;
+}
+
+.food{
+	width: 20vw;
+	font-size: 32px;
+	word-wrap: break-word;
+	background-color: rgba(128, 196, 86, 0.6);
+}
+
+.food a:hover{
+	color: blue;
+}
+
+.all_actions{
+	background-color: grey;
+	color: black;
+	text-align: center;
+}
+
+.all_actions a:hover{
+	color: blue;
+}
+
+.for_live{
+	margin-top: 100px;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+.f_l{
+	font-size: 56px;
+	color: white;
+}
+
+.why{
+	font-size: 28px;
+	border: 1px solid grey;
+	color: white;
+	background-color: rgba(150, 150, 150, 0.6);
+}
+
+.video_left{
+	text-align: left;
+	margin-left: 15%;
+}
+
+.video_right{
+	text-align: right;
+	margin-right: 15%; 
+}
+
+.video_center{
+	text-align: center;
+}
+
+#show_reason{
+	margin-top: 100px;
+	font-size: 24px;
+	color: white;
+}
+
+.blog{
+	background-color: white;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.fit_photo{
+	width: 300px;
+	height: 240px;
+}
+
+.descr{
+	color: black;
+	height: 80px;
+	margin-left: -4px;
+	color: white;
+	padding: 20px;
+	text-align: left;
+}
+
+.descr:hover{
+	transform: scale(1.2, 1.2);
+	background-color: rgb(50, 50, 50);
+}
+
+.d1{
+	background-color: rgb(139, 201, 94);
+}
+
+.d2{
+	background-color: rgb(117, 191, 79);
+}
+
+.d3{
+	background-color: rgb(104, 180, 74);
+}
+
+.news_block{
+	height: 240px;
+	width: 20%;
+	text-align: left;
+}
+
+.d_header{
+	font-size: 20px;
+}
+
+.a_header{
+	font-size: 32px;
+	color: rgb(50, 50, 50);
+}
+
+.a_main{
+	padding-top: 10px;
+	color: rgb(50, 50, 50);
+}
+
+.to_do{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.to_do_block{
+	width: 20%;
+	color: black;
+	text-align: left;
+	padding: 10px;
+}
+
+.top_line_block{
+	border: 0.5px solid grey;
+	border-top-width: 2px;
+	border-top-color: green;
+}
+
+.ender_text{
+	padding: 10px;
+	text-align: left;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
+.footer_block{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 14px;
+	background-color: rgb(0, 162, 232);
+	opacity: 0.6;
+	height: 10vh;
+	padding-top: 3vh;
+}
+
+.footer_item{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+}
+
+
+.club_info{
+	margin-top: 100px;
+	background-color: white;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+#club_take_card_btn{
+	background-color: rgb(132, 201, 94);
+	color: white;
+	padding: 10px;
+	text-align: right;
+}
+
+#btn_take_card_container{
+	text-align: right;
+}
+
+.clubs_clubs_container_row{
+	text-align: center;
+}
+
+.clubs_clubs_container_row_item{
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+}
+
+.friendchaising_info{
+	margin-top: 100px;
+	background-color: white;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+
+.friendchaising_left_block{
+	width: 20%;
+	float: left;
+}
+
+.friendchaising_left_block ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.friendchaising_right_block{
+	width: 80%;
+	overflow: hidden;
+}
+
+.friendchaising_right_block ul{
+	list-style-type: square;
+}
+
+.friendchaising_line_block{
+	display: inline-block;
+}
+
+.friendchaising_vert_block{
+	width: 19vw;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.services_container{
+	padding-left: 20%;
+	padding-right: 20%;
+	background-color: white;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.services_img_container{
+	display: inline-block;
+	text-align: center;
+}
+
+.services_service{
+}
+
+.service_image{
+	width: 18vw;
+	height: auto;
+	overflow:hidden;
+	transition: all 1s ease-out;
+}
+
+.service_image:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.services_service_descr{
+	text-align: left;
+	color: black;
+	font-size: 24px;
+}

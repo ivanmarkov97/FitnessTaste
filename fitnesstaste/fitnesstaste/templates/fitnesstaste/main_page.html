@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_page %}
+		<div class="events">
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Купить карту <div class="new_line_word">онлайн</div>	
+					</div>
+					<div class="block">
+						<img src="{% static 'fitnesstaste/money.png' %}" alt="money" class="event_icon"> 
+					</div>
+				</a>
+			</div>
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Виды клубных <div class="new_line_word">карт</div>	
+					</div>
+					<div class="block">
+						<img src="{% static 'fitnesstaste/news.png' %}" alt="news" class="event_icon">
+					</div> 
+				</a>
+			</div>
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Корпоративные <div class="new_line_word">продажи</div>	
+					</div>
+					<div class="block">
+			    		<img src="{% static 'fitnesstaste/person.png' %}" alt="person" class="event_icon"> 
+			    	</div>
+			    </a>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="block">
+				<ul class="service_list">
+					<li><a href="#">ТРЕНАЖЕРНЫЙ ЗАЛ</a></li>
+					<li><a href="#">ГРУППОВЫЕ ПРОГРАММЫ</a></li>
+					<li><a href="#">БАССЕЙН</a></li>
+					<li><a href="#">ДЕТСКИЙ ФИТНЕС</a></li>
+					<li><a href="#">ДЕТСКИЙ КЛУБ</a></li>
+					<li><a href="#">ИГРОВЫЕ ВИДЫ СПОРТА</a></li>
+					<li><a href="#">ТЕННИСНЫЕ КОРТЫ</a></li>
+					<li><a href="#">САЛОНЫ КРАСОТЫ И SPA</a></li>
+					<li><a href="#">ФИТНЕС-ТЕСТИРОВАНИЕ</a></li>
+					<li><a href="#">ФИТНЕС-КАФЕ</a></li>
+					<li><a href="#">ПЕРСОНАЛЬНЙ ТРЕНЕР</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<img src="{% static 'fitnesstaste/present_image.jpg' %}" align="present" class="present_image">
+			</div>
+			<div class="block actions">
+				<div class="visiter">
+					<a href="#">Заказать гостевой визит</a>
+				</div>
+				<div class="food">
+					<a href="#">ЗАКАЖИ ПРАВИЛЬНОЕ ПИТАНИЕ ОТ FITNESSTASTE</a>
+				</div>
+				<div class="all_actions">
+					<a href="#">Все Акции</a>
+				</div>
+			</div>
+		</div>
+
+
+		<center>
+			<div class="for_live">
+				<div class="f_l">
+					<i>ФИТНЕС <br> ДЛЯ ЖИЗНИ</i>
+				</div>
+				<div class="why">
+					5 ПРИЧИН, ПОЧЕМУ ЭТО<br>ДЕЙСТВИТЕЛЬНО ТАК
+				</div>
+			</div>
+		</center>
+
+
+		<div id="videos">
+		<div class="video_left">
+		<video width="500" height="400" controls autoplay loop>
+			<source src="/static/futazh.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>	
+		</div>
+		<div class="video_right">
+		<video width="500" height="400" controls autoplay loop>
+			<source src="/static/futazh.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		</div>
+		<div  class="video_center">
+		<video width="500" height="400" controls autoplay loop>
+			<source src="/static/futazh.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		</div>
+		<center>
+			<a href="#" id="show_reason">Показать еще 2 причины</a>
+		</center>
+		</div>
+
+
+	
+{% endblock %}

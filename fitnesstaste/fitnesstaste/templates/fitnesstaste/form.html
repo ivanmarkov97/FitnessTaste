@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block form %}
+
+<form method="post">
+{% csrf_token %}
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" hint="Your name">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}

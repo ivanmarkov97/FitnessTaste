@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block services %}
+<div class="events">
+	<div class="block event">
+		<a href="#">
+			<div class="block">
+				Купить карту <div class="new_line_word">онлайн</div>	
+			</div>
+			<div class="block">
+				<img src="{% static 'fitnesstaste/money.png' %}" alt="money" class="event_icon"> 
+			</div>
+		</a>
+	</div>
+	<div class="block event">
+		<a href="#">
+			<div class="block">
+				Виды клубных <div class="new_line_word">карт</div>	
+			</div>
+			<div class="block">
+				<img src="{% static 'fitnesstaste/news.png' %}" alt="news" class="event_icon">
+			</div> 
+		</a>
+	</div>
+	<div class="block event">
+		<a href="#">
+			<div class="block">
+				Корпоративные <div class="new_line_word">продажи</div>	
+			</div>
+			<div class="block">
+	    		<img src="{% static 'fitnesstaste/person.png' %}" alt="person" class="event_icon"> 
+	    	</div>
+	    </a>
+	</div>
+</div>
+
+<div class="services_container">
+	<button id="club_take_card_btn">ЗАКАЗАТЬ КАРТУ</button>
+	<span><h1>УСЛУГИ</h1></span>
+	<div class="services_img_container">
+		{% for service in services %}
+		<div class="services_img_container">
+			<div class="services_service">
+				<a href=""><img src="{{ service.service_image.url }}" class="service_image"></a>
+				<div class="services_service_descr">
+					{{ service.service_name }}
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

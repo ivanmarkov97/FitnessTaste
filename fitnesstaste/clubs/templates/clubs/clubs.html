@@ -1,0 +1,73 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block clubs %}
+
+<div class="events">
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Купить карту <div class="new_line_word">онлайн</div>	
+					</div>
+					<div class="block">
+						<img src="{% static 'fitnesstaste/money.png' %}" alt="money" class="event_icon"> 
+					</div>
+				</a>
+			</div>
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Виды клубных <div class="new_line_word">карт</div>	
+					</div>
+					<div class="block">
+						<img src="{% static 'fitnesstaste/news.png' %}" alt="news" class="event_icon">
+					</div> 
+				</a>
+			</div>
+			<div class="block event">
+				<a href="#">
+					<div class="block">
+						Корпоративные <div class="new_line_word">продажи</div>	
+					</div>
+					<div class="block">
+			    		<img src="{% static 'fitnesstaste/person.png' %}" alt="person" class="event_icon"> 
+			    	</div>
+			    </a>
+			</div>
+		</div>
+
+<div class="club_info">
+	<div id="btn_take_card_container">
+		<button id="club_take_card_btn">ЗАКАЗАТЬ КАРТУ</button>
+	</div>
+	<div>
+		<h2>ФИТНЕС-КЛУБЫ FITNESSTASTE</h2>
+	</div>
+	<div>
+		Всего клубов {{ all_clubs|length }}
+	</div>
+	<div class="clubs_clubs_container">
+		<div class="clubs_clubs_container_row">
+		<div style="text-align: left;">
+		{% for club in all_clubs %}
+			<div class="clubs_clubs_container_row_item">
+				<h4>{{ club.club_name }}</h4>
+				<div>
+					<a href="#">{{ club.club_addres }}</a>
+				</div>
+				<div>
+					<a href="#"><b>{{ club.club_contact }}</b></a>
+				</div>
+				<div>
+					<a href="#">{{ club.club_email }}</a>
+				</div>
+				<div>
+					<a href="#">Записаться в салон красоты</a>
+				</div>	
+			</div>
+		{% endfor %}
+		</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
